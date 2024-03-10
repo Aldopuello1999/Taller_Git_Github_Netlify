@@ -4,6 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller</title>
+    <style>
+        .card-container {
+            display: flex;
+            justify-content: space-around; 
+        }
+        .card {
+          width: 300px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          padding: 10px;
+          margin: 10px;
+        }
+        .card img {
+          width: 100%;
+          border-radius: 5px;
+        }
+        .card h3 {
+          color: #333;
+        }
+        .card p {
+          color: #666;
+        }
+        </style>
 </head>
 <body>
     <h1>Informacion del Estudiante</h1>
@@ -19,9 +42,19 @@
         - Pedro Alonso ,
         - Úrsula Corberó 
     </p>
-    <h2>Imagenes de la series</h2>
-    <img src="https://i.blogs.es/a21bc3/silicon-valley-fodo/1366_2000.jpg" alt="" width="70%" height="70%" accept="image/*" >
-    <img src="https://decider.com/wp-content/uploads/2016/06/silicon-valley-feature.png" alt="" width="70%" height="70%" accept="image/*" >
+    <h2 >Imagenes de la series</h2>
+    <div class="card-container">
+        <div class="card">
+            <img src="https://i.blogs.es/a21bc3/silicon-valley-fodo/1366_2000.jpg" alt="" width="70%" height="70%" accept="image/*" >
+            <h3>Silicon Valley</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, doloribus nihil </p>
+        </div>
+        <div class="card">
+            <img src="https://decider.com/wp-content/uploads/2016/06/silicon-valley-feature.png" alt="" width="70%" height="70%" accept="image/*" >
+            <h3>Silicon Valley</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus tempore odio magn</p>
+        </div>
+    </div>
     <br>
     <h3>La casa de Papel</h3>
     <img src="https://phantom-marca.unidadeditorial.es/15e56b12318ffe02cfe2fe774741be9e/resize/1200/f/webp/assets/multimedia/imagenes/2021/09/02/16305820546830.jpg" alt="" width="70%" height="70%" accept="image/*" >
